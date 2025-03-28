@@ -1,6 +1,7 @@
 # Laravel Persian Language Files
 
 This package provides Persian language files for Laravel.
+Support Laravel 5 to 12.
 
 ## Installation
 
@@ -10,6 +11,12 @@ You can install the package via composer:
 
 ```bash
 composer require sadegh19b/laravel-persian-lang
+```
+
+If you want to install specific version of laravel, you can use (also you can see branches for different versions):
+
+```bash
+composer require sadegh19b/laravel-persian-lang:^{laravel-version}.0
 ```
 
 ### Option 2: Manual Installation
