@@ -24,7 +24,7 @@ class PersianLangServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../lang/fa' => resource_path('lang/fa'),
+            __DIR__.'/../lang/fa' => base_path('lang/fa'),
         ], 'persian-lang');
     }
 }

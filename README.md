@@ -17,7 +17,7 @@ composer require sadegh19b/laravel-persian-lang
 If you prefer not to use Composer, you can manually copy the language files:
 
 1. Download or clone this repository
-2. Copy the `fa` folder from `lang/` to your Laravel application's `resources/lang/` directory
+2. Copy the `fa` folder from `lang/` to your Laravel application's `lang/` directory
 3. The language files will be available in your application
 
 ## Usage
@@ -30,7 +30,7 @@ Run the following command to publish the language files:
 php artisan vendor:publish --tag=persian-lang
 ```
 
-This will copy the language files to `resources/lang/fa/` in your application. You can then modify them as needed.
+This will copy the language files to `lang/fa/` in your application. You can then modify them as needed.
 
 ### 2. Setting the Language
 
