@@ -1,0 +1,29 @@
+{
+    "name": "sadegh19b/laravel-persian-lang",
+    "description": "Persian language files for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sadegh Barzegar",
+            "email": "sadegh19b@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sadegh19b\\PersianLang\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sadegh19b\\PersianLang\\PersianLangServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
