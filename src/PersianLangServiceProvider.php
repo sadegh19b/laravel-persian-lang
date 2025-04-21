@@ -23,17 +23,16 @@ class PersianLangServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (method_exists($this, 'publishes')) {
-            // For Laravel 5.3+
-            $this->publishes([
-                __DIR__.'/../lang/fa' => base_path('resources/lang/fa'),
-            ], 'persian-lang');
-        }else {
-            // For Laravel 5.0-5.2
-            $this->app['files']->copyDirectory(
-                __DIR__.'/../lang/fa',
-                base_path('resources/lang/fa')
-            );
+        // For Laravel 8 and below, use the resources/lang directory
+        $path = resource_path('lang/fa');
+
+        // Laravel 9+ uses lang directory in base path
+        if (version_compare(app()->version(), '9.0', '>=')) {
+            $path = base_path('lang/fa');
         }
+
+        $this->publishes([
+            __DIR__.'/../lang/fa' => $path,
+        ], 'persian-lang');
     }
 }
