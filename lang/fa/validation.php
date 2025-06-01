@@ -72,6 +72,7 @@ return [
     'hex_color' => 'فیلد :attribute باید یک کد رنگ هگزادسیمال معتبر باشد.',
     'image' => 'فیلد :attribute باید یک تصویر باشد.',
     'in' => ':attribute انتخاب شده، معتبر نیست.',
+    'in_array_keys' => 'فیلد :attribute باید حداقل یکی از کلیدهای (:values) را داشته باشد.',
     'in_array' => 'فیلد :attribute باید در :other وجود داشته باشد.',
     'integer' => 'فیلد :attribute باید عدد صحیح باشد.',
     'ip' => 'فیلد :attribute باید یک آدرس IP معتبر باشد.',
