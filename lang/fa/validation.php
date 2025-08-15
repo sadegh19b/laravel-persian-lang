@@ -48,6 +48,7 @@ return [
     'digits_between' => 'فیلد :attribute باید بین :min و :max رقم باشد.',
     'dimensions' => 'ابعاد تصویر فیلد :attribute نامعتبر است.',
     'distinct' => 'فیلد :attribute مقدار تکراری دارد.',
+    'doesnt_contain' => 'فیلد :attribute نباید شامل هیچ یک از موارد (:values) باشد.',
     'doesnt_end_with' => 'فیلد :attribute نباید با یکی از موارد (:values) به پایان برسد.',
     'doesnt_start_with' => 'فیلد :attribute نباید با یکی از موارد (:values) شروع شود.',
     'email' => 'فیلد :attribute باید یک ایمیل معتبر باشد.',
