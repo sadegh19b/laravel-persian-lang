@@ -24,23 +24,42 @@ If you prefer not to use Composer, you can manually copy the language files:
 
 ## Usage
 
-### 1. Publishing Language Files
+### Setting the Language
 
-Run the following command to publish the language files:
+After installing the package, the Persian language files are **automatically available without any additional configuration**. 
+
+Simply set the locale to `fa` in your `config/app.php` file:
+
+```php
+'locale' => 'fa',
+```
+
+Or set it dynamically in your code:
+
+```php
+app()->setLocale('fa');
+```
+
+That's it! Now you can use Laravel's translation functions normally:
+
+```php
+__('validation.required')           // فیلد الزامی است
+__('auth.failed')                   // اطلاعات ورود نادرست است
+__('passwords.reset')               // رمز عبور بازنشانی شد
+trans('pagination.previous')        // قبلی
+```
+
+**No need to publish or use any namespace!** The package works automatically when your locale is set to `fa`.
+
+### Publishing Language Files (Optional)
+
+If you want to customize the translations, you can optionally publish them:
 
 ```bash
 php artisan vendor:publish --tag=persian-lang
 ```
 
-This will copy the language files to `lang/fa/` in your application. You can then modify them as needed.
-
-### 2. Setting the Language
-
-To use Persian as your application's language, set the locale in your `config/app.php` file:
-
-```php
-'locale' => 'fa',
-```
+This will copy the language files to `lang/fa/` in your application. Your published files will automatically take precedence over the package files.
 
 ## Available Language Files
 
