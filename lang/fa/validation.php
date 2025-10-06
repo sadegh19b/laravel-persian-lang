@@ -194,6 +194,6 @@ return [
     |
     */
 
-    'attributes' => require __DIR__.'/validation-attributes.php',
+    'attributes' => file_exists(lang_path('fa/validation-attributes.php')) ? require lang_path('fa/validation-attributes.php') : [],
 
 ];

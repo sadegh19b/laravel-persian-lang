@@ -61,6 +61,10 @@ php artisan vendor:publish --tag=persian-lang
 
 This will copy the language files to `lang/fa/` in your application. Your published files will automatically take precedence over the package files.
 
+### Validation attributes
+
+If you want to change validation attributes, just copy the `validation-attributes.php` file to your `lang/fa/` directory and don't need to publish other translation files.
+
 ## Available Language Files
 
 - `auth.php` - Authentication related translations
