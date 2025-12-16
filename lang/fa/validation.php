@@ -52,6 +52,7 @@ return [
     'doesnt_end_with' => 'فیلد :attribute نباید با یکی از موارد (:values) به پایان برسد.',
     'doesnt_start_with' => 'فیلد :attribute نباید با یکی از موارد (:values) شروع شود.',
     'email' => 'فیلد :attribute باید یک ایمیل معتبر باشد.',
+    'encoding' => 'فیلد :attribute باید با کدگذاری :encoding باشد.',
     'ends_with' => 'فیلد :attribute باید با یکی از موارد (:values) به پایان برسد.',
     'enum' => ':attribute انتخاب شده نامعتبر است.',
     'exists' => ':attribute انتخاب شده، معتبر نیست.',
