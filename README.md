@@ -2,7 +2,7 @@
 
 This package provides Persian language files for Laravel.
 
-- Support Laravel 6 to 12
+- Support Laravel 6 to 13
 
 ## Installation
 
